@@ -4,7 +4,6 @@ int main() {
     int arr[5] = {3, 1, 4, 1, 5};
     int i, sum = 0, max = arr[0];
 
-    // Step 1: Calculate sum and find max value
     for (i = 0; i < 5; i++) {
         sum += arr[i];
         if (arr[i] > max) {
@@ -12,7 +11,6 @@ int main() {
         }
     }
 
-    // Step 2: Modify array values
     for (i = 0; i < 5; i++) {
         if (arr[i] % 2 == 0) {
             arr[i] /= 2;
@@ -21,7 +19,6 @@ int main() {
         }
     }
 
-    // Step 3: Print results
     printf("Sum: %d\n", sum);
     printf("Max: %d\n", max);
 
