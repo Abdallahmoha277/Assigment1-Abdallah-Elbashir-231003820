@@ -29,3 +29,7 @@ int main() {
 
     return 0;
 }
+
+the output is :
+Sum: 14
+Modified Array: 6 2 2 2 10
