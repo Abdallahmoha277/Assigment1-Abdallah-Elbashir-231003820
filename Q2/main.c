@@ -15,3 +15,6 @@ int main() {
 
     return 0;
 }
+
+The OutPut is :
+Updated Array: 2 5 8 11 14
