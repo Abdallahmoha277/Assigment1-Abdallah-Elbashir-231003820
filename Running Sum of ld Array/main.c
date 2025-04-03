@@ -1,38 +1,23 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-void runningSum(int nums[], int n, int result[]) {
-    result[0] = nums[0];
-    for (int i = 1; i < n; i++) {
-        result[i] = result[i - 1] + nums[i];
-    }
-}
-
-int main() {
-    int n;
-
-
-    printf("Enter the size of the array: ");
+int main(){
+    int i, x, n, arr[100], result[100];
+    printf("Enter the number of the  elements of the array : ");
     scanf("%d", &n);
-
-    int nums[n], result[n];
-
-    printf("Enter %d elements: ", n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &nums[i]);
+    printf("Enter the elements of the array : ");
+    for(i=0;i<n;i++){
+    scanf("%d", &arr[i]);
+    }
+    result[0] = arr[100];
+    for(i=0;i<n;i++){
+        result[i]=result[i-1]+arr[i];
+    }
+    printf("Running Sum : \n");
+    for(i = 0; i < n; i++){
+        printf("%d ", result[i]);
     }
 
-
-    runningSum(nums, n, result);
-
-
-    printf("Running sum: [");
-    for (int i = 0; i < n; i++) {
-        printf("%d", result[i]);
-        if (i < n - 1) {
-            printf(", ");
-        }
-    }
-    printf("]\n");
 
     return 0;
 }
