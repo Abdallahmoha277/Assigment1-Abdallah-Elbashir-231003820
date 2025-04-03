@@ -20,3 +20,10 @@ int main() {
 
     return 0;
 }
+
+THE OUTPUT:
+
+Sum: 15
+Product: 59
+Difference: 5
+Product is greater or equal to Sum
