@@ -9,7 +9,7 @@ int main(){
     for(i=0;i<n;i++){
     scanf("%d", &arr[i]);
     }
-    result[0] = arr[100];
+    result[0] = arr[0];
     for(i=0;i<n;i++){
         result[i]=result[i-1]+arr[i];
     }
